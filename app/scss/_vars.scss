@@ -1,0 +1,65 @@
+%broadway-400 {
+  font-family: 'broadway-normal', sans-serif;
+  font-weight: 400;
+}
+
+%helvetica-neue-400 {
+  font-family: 'helvetica_neue-regular', sans-serif;
+  font-weight: 400;
+}
+
+%limelight-400 {
+  font-family: 'limelight-regular', sans-serif;
+  font-weight: 400;
+}
+
+%d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+%button {
+  display: block;
+  align-content: center;
+}
+
+%inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 52px;
+}
+
+%link {
+  &:hover {
+    color: #4e4e4e;
+  }
+
+  &:active {
+    color: #838383;
+  }
+}
+
+%shop-now {
+  &:hover {
+    background-color: #4e4e4e;
+    color: #fff0d4;
+  }
+
+  &:active {
+    background-color: #ffe2a9;
+    color: #171717;
+  }
+}
+
+%img {
+  &:hover {
+    background-color: #4e4e4e;
+    filter: opacity(40%);
+  }
+
+  &:active {
+    background-color: #838383;
+    filter: opacity(40%);
+  }
+}
