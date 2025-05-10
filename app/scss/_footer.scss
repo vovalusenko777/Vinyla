@@ -1,0 +1,156 @@
+.footer {
+  @extend %helvetica-neue-400;
+  background-color: #171717;
+  color: #fff;
+  height: 514px;
+
+  &__logo {
+    padding-top: 101px;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+  }
+
+  &__logo-img {
+    width: 266px;
+
+    &:hover {
+      filter: opacity(75%);
+    }
+
+    &:active {
+      filter: opacity(50%);
+    }
+
+    &--mini {
+      display: none;
+    }
+  }
+
+  &__list {
+    font-size: 24px;
+    margin: 121px 0 117px;
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+  }
+
+  &__link {
+    @extend %link;
+    transition: 0.3s;
+  }
+
+  &__about {
+    position: relative;
+    @extend %d-flex;
+    align-items: center;
+    padding-top: 3px;
+  }
+
+  &__select {
+    color: #383d38;
+    background-color: transparent;
+  }
+
+  &__language {
+
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+
+    &-btn {
+      position: relative;
+      display: flex;
+      align-items: center;
+      background: none;
+      color: #383d38;
+      border: none;
+      cursor: pointer;
+      font-size: 24px;
+      border-radius: 4px;
+      transition: color 0.3s;
+      padding: 0;
+
+      &::after {
+        content: '';
+        right: -26px;
+        position: absolute;
+        background-image: url('../img/footer-arrows.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 16px;
+        height: 8px;
+      }
+
+      &:hover {
+        color: #707070;
+
+        &::after {
+          background-image: url('../img/footer-arrows-hover.svg');
+        }
+      }
+    }
+
+    &-menu {
+      display: none;
+      position: absolute;
+      top: calc(-100% - 65px);
+      left: 5px;
+      background: #fff;
+      border: 1px solid #ccc;
+      min-width: 140px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      z-index: 10;
+      margin-top: 4px;
+
+      a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+        transition: background 0.3s;
+
+        &:hover {
+          background-color: #f2f2f2;
+        }
+      }
+    }
+
+    &--active &-menu {
+      display: block;
+    }
+  }
+
+
+  &__socials {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+
+  }
+
+  &__icon {
+    fill: #383d38;
+    transition: 0.3s;
+
+    &:first-of-type {
+      &:hover {
+        fill: #707070;
+      }
+
+      &:active {
+        fill: #838383;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    color: #383d38;
+  }
+
+}

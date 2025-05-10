@@ -1,0 +1,30 @@
+.about {
+  position: relative;
+  margin: 52px 0;
+  height: 276px;
+
+  &__title {
+    color: #FFE2A9;
+    @extend %limelight-400;
+    font-size: 48px;
+    margin-bottom: 51px;
+  }
+
+  &__p {
+    color: #171717;
+    @extend %helvetica-neue-400;
+    font-size: 24px;
+    width: 720px;
+    line-height: 29px;
+
+    &:last-of-type {
+      margin-top: 29px;
+    }
+  }
+
+  img {
+    position: absolute;
+    top: -300px;
+    right: 0;
+  }
+}

@@ -1,0 +1,111 @@
+.header {
+  position: relative;
+  height: 826px;
+  padding-top: 33px;
+
+  &__nav {
+    @extend %d-flex;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 212px;
+    transition: 0.3s;
+
+    &:hover {
+      filter: invert(33%) sepia(0%) saturate(0%) hue-rotate(319deg) brightness(90%) contrast(94%);
+    }
+
+    &:active {
+      filter: invert(57%) sepia(0%) saturate(560%) hue-rotate(258deg) brightness(91%) contrast(92%);
+    }
+  }
+
+
+  &__menu {
+    @extend %helvetica-neue-400;
+    display: flex;
+    font-size: 24px;
+    color: #fff;
+    max-width: 622px;
+  }
+
+  &__link {
+    @extend %link;
+    transition: 0.3s;
+  }
+
+  &__link:not(:last-child) {
+    margin-right: 26px;
+  }
+
+  &__icon {
+    @extend %d-flex;
+    gap: 17px;
+  }
+
+  &__links {
+    transition: 0.3s;
+
+    &:hover {
+      filter: invert(33%) sepia(0%) saturate(0%) hue-rotate(319deg) brightness(90%) contrast(94%);
+    }
+
+    &:active {
+      filter: invert(57%) sepia(0%) saturate(560%) hue-rotate(258deg) brightness(91%) contrast(92%);
+    }
+  }
+
+  &__content {
+    text-align: center;
+    margin: 21px 0px;
+  }
+
+  .title {
+    color: #000;
+  }
+
+  &__subtitle {
+    @extend %helvetica-neue-400;
+    font-size: 40px;
+    color: #FFE2A9;
+    margin-top: 9px;
+    text-transform: uppercase;
+    line-height: 48px;
+  }
+
+  &__text {
+    @extend %helvetica-neue-400;
+    font-size: 20px;
+    max-width: 379px;
+    margin: 9px auto;
+    line-height: 24px;
+  }
+
+  &__button {
+    @extend %button;
+    @extend %helvetica-neue-400;
+    margin: 0 auto;
+    width: 140px;
+    height: 53px;
+    border-radius: 25px;
+    background-color: #171717;
+    color: #FFE2A9;
+    font-size: 20px;
+    @extend %shop-now;
+    transition: 0.3s;
+  }
+
+  &__picture {
+    position: absolute;
+    width: 837px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+  }
+
+  &__logo-img--mini {
+    display: none;
+    width: 143px;
+  }
+}

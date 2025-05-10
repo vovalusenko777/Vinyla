@@ -1,0 +1,51 @@
+.new-arrivals {
+  background-color: #171717;
+  height: 559px;
+
+  &__inner {
+    @extend %inner;
+    position: relative;
+    color: #FFE2A9;
+    padding: 65px 0 119px;
+  }
+
+  &__cards {
+    @extend %d-flex;
+    padding-bottom: 66px;
+  }
+
+  &__card {
+    position: relative;
+    background-color: #070707;
+    border-radius: 17px;
+    height: 230px;
+    width: 352px;
+  }
+
+  &__img {
+    position: absolute;
+    top: -48px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+  }
+
+  &__text {
+    @extend %helvetica-neue-400;
+    @extend %d-flex;
+    margin-left: 13px;
+    margin-right: 28px;
+    padding-bottom: 24px;
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 186px;
+  }
+
+  &__title {
+    width: 196px;
+    bottom: 0;
+  }
+
+
+}

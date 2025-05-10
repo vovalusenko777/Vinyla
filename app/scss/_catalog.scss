@@ -1,0 +1,45 @@
+.catalog {
+  &__inner {
+    @extend %inner;
+    position: relative;
+    color: #FFE2A9;
+    margin-bottom: 151px;
+    padding-top: 52px;
+  }
+
+  &__cards {
+    @extend %d-flex;
+    margin-bottom: 75px;
+  }
+
+  &__card {
+    position: relative;
+    background-color: #070707;
+    border-radius: 17px;
+    height: 203px;
+    width: 352px;
+  }
+
+  &__img {
+    position: absolute;
+    top: -129px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+  }
+
+  &__text {
+    @extend %d-flex;
+    margin: 0 13px;
+    padding-bottom: 24px;
+    @extend %helvetica-neue-400;
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 165px;
+  }
+
+  &__title {
+    width: 196px;
+  }
+
+}
