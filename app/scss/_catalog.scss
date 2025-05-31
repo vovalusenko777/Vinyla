@@ -2,7 +2,7 @@
   &__inner {
     @extend %inner;
     position: relative;
-    color: #FFE2A9;
+    color: $accent;
     margin-bottom: 151px;
     padding-top: 52px;
   }
@@ -14,7 +14,7 @@
 
   &__card {
     position: relative;
-    background-color: #070707;
+    background-color: $bg-card;
     border-radius: 17px;
     height: 203px;
     width: 352px;
@@ -34,7 +34,7 @@
     padding-bottom: 24px;
     @extend %helvetica-neue-400;
     font-size: 16px;
-    color: #ffffff;
+    color: $white;
     margin-top: 165px;
   }
 

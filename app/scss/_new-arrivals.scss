@@ -1,11 +1,11 @@
 .new-arrivals {
-  background-color: #171717;
+  background-color: $text;
   height: 559px;
 
   &__inner {
     @extend %inner;
     position: relative;
-    color: #FFE2A9;
+    color: $accent;
     padding: 65px 0 119px;
   }
 
@@ -16,7 +16,7 @@
 
   &__card {
     position: relative;
-    background-color: #070707;
+    background-color: $bg-card;
     border-radius: 17px;
     height: 230px;
     width: 352px;
@@ -37,7 +37,7 @@
     margin-right: 28px;
     padding-bottom: 24px;
     font-size: 16px;
-    color: #ffffff;
+    color: $white;
     text-transform: uppercase;
     margin-top: 186px;
   }

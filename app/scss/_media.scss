@@ -65,7 +65,7 @@
       transition: max-height 0.3s ease, opacity 0.3s ease;
       flex-direction: column;
       width: 100%;
-      background-color: #171717;
+      background-color: $text;
       padding: 10px 0;
       gap: 16px;
       max-height: 0;
@@ -113,6 +113,7 @@
 
   .new-arrivals {
     height: 1064px;
+
     &__inner {
       padding: 54px 0 57px;
     }
@@ -123,13 +124,13 @@
       padding-bottom: 98px;
       justify-content: center;
 
-      & > .new-arrivals__card:nth-child(2) .new-arrivals__text {
+      &>.new-arrivals__card:nth-child(2) .new-arrivals__text {
         margin-top: 181px;
       }
 
-      & > .new-arrivals__card:nth-child(3) .new-arrivals__text {
-      margin-top: 184px;
-    }
+      &>.new-arrivals__card:nth-child(3) .new-arrivals__text {
+        margin-top: 184px;
+      }
     }
   }
 
@@ -149,7 +150,7 @@
 
   .bestsellers {
     height: 581px;
-    
+
     .container {
       margin: 0;
       justify-content: center;
@@ -250,6 +251,7 @@
 
   .footer {
     height: 347px;
+
     &__about {
       position: relative;
       flex-direction: column;
@@ -273,7 +275,7 @@
       gap: 27px;
       margin: 41px 0 36px;
       font-size: 15px;
-      border-right: #fff;
+      border-right: $white;
     }
 
     &__link {
@@ -284,7 +286,7 @@
         position: absolute;
         left: -15px;
         top: 1px;
-        color: #fff;
+        color: $white;
       }
 
       &:first-of-type::before {

@@ -1,6 +1,6 @@
 .genres {
-  background-color: #171717;
-  color: #FFE2A9;
+  background-color: $text;
+  color: $accent;
   padding-bottom: 177px;
   height: 1229px;
 
@@ -16,7 +16,7 @@
     grid-template-rows: 294px 292px 292px;
     @extend %helvetica-neue-400;
     font-size: 24px;
-    color: #ffffff;
+    color: $white;
   }
 
   &__card {
@@ -74,11 +74,11 @@
     margin-top: 37px;
 
     &:hover {
-      color: #7a7a7a;
+      color: $text-hover;
     }
 
     &:active {
-      color: #838383;
+      color: $text-active;
     }
   }
 
@@ -88,11 +88,11 @@
 
   &__text {
     &:hover {
-      color: #7a7a7a;
+      color: $text-hover;
     }
 
     &:active {
-      color: #838383;
+      color: $text-active;
     }
   }
 }

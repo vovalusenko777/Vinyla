@@ -1,6 +1,6 @@
 body {
-  background-color: #ED6044;
-  color: #171717;
+  background-color: $bg;
+  color: $text;
 }
 
 .container {
@@ -26,8 +26,8 @@ body {
   position: absolute;
   right: 0;
   margin: 0;
-  border: 1px solid #FFE2A9;
-  color: #FFE2A9;
+  border: 1px solid $accent;
+  color: $accent;
   border-radius: 28px;
   width: 85px;
   height: 30px;
@@ -35,12 +35,12 @@ body {
   transition: 0.3s;
 
   &:hover {
-    border: 1px solid #fff7e6;
-    color: #fff7e6;
+    border: 1px solid $btn-hover;
+    color: $btn-hover;
 
     &:active {
-      border: 1px solid #d9d3c6;
-      color: #d9d3c6;
+      border: 1px solid $btn-active;
+      color: $btn-active;
     }
   }
 }
@@ -57,7 +57,7 @@ body {
 .burger span {
   width: 33px;
   height: 2px;
-  background-color: #171717;
+  background-color: $text;
   border-radius: 2px;
   transition: 0.3s;
 }
@@ -67,14 +67,14 @@ body {
 }
 
 .arrows {
-  stroke: #FFE2A9;
+  stroke: $accent;
   transition: stroke 0.3s;
 
   &:hover {
-    stroke: #fff7e6;
+    stroke: $btn-hover;
   }
 
   &:active {
-    stroke: #D9D3C6;
+    stroke: $btn-active;
   }
 }

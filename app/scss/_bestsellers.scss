@@ -1,11 +1,11 @@
 .bestsellers {
-  background-color: #171717;
-  color: #FFE2A9;
+  background-color: $bg-card;
+  color: $accent;
 
   &__inner {
     @extend %inner;
     position: relative;
-    color: #FFE2A9;
+    color: $accent;
     padding-top: 52px;
     margin-bottom: 80px;
   }

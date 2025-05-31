@@ -4,14 +4,14 @@
   height: 276px;
 
   &__title {
-    color: #FFE2A9;
+    color: $accent;
     @extend %limelight-400;
     font-size: 48px;
     margin-bottom: 51px;
   }
 
   &__p {
-    color: #171717;
+    color: $text;
     @extend %helvetica-neue-400;
     font-size: 24px;
     width: 720px;
